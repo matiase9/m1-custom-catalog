@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <WFS_Catalog>
+            <version>0.1.1</version>
+        </WFS_Catalog>
+    </modules>
+    <global>
+        <blocks>
+            <wfs_catalog>
+                <class>WFS_Catalog_Block</class>
+            </wfs_catalog>
+        </blocks>
+        <helpers>
+            <wfs_catalog>
+                <class>WFS_Catalog_Helper</class>
+            </wfs_catalog>
+        </helpers>
+        <resources>
+            <wfs_setup>
+                <setup>
+                    <module>WFS_Catalog</module>
+                    <class>Mage_Catalog_Model_Resource_Eav_Mysql4_Setup</class>
+                </setup>
+            </wfs_setup>
+        </resources>
+
+        <fieldsets>
+            <sales_convert_quote>
+                <shipping_date>
+                    <to_order_item>*</to_order_item>
+                </shipping_date>
+            </sales_convert_quote>
+        </fieldsets>
+    </global>
+</config>
